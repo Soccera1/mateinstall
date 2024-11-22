@@ -1,0 +1,7 @@
+#!/bin/bash
+
+git clone https://github.com/Soccera1/mateinstaller.git
+
+cd mateinstaller
+
+sudo ./mateinstaller
