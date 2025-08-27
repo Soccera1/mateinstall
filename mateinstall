@@ -1,7 +1,14 @@
 #!/bin/bash
 
+if [[ $EUID -ne 0 ]]; then
+  echo "You must be root."
+  exit 1
+fi
+
 git clone https://github.com/Soccera1/mateinstaller.git
 
 cd mateinstaller
 
-sudo ./mateinstaller
+./mateinstaller
+
+rm -rf mateinstaller
